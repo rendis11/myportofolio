@@ -1,0 +1,12 @@
+/* Hover zoom effect for images */
+.hover-zoom {
+  transition: transform 0.4s ease;
+}
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* Object-fit for consistent image crop */
+.object-fit-cover {
+  object-fit: cover;
+}

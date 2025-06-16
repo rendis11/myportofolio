@@ -1,0 +1,130 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Profil - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h2 class="text-center mb-4">Sertifikat</h2>
+
+  <!-- Tabs kategori -->
+  <ul class="nav nav-pills justify-content-center mb-4" id="portfolio-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#keahlian">Keahlian</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#seminar">Seminar</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#penghargaan">Penghargaan</a>
+    </li>
+  </ul>
+
+  <!-- Konten tab -->
+  <div class="tab-content">
+    <!-- Tab: Keahlian -->
+    <div class="tab-pane fade show active" id="keahlian">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>NAMA SERTIFIKAT</th>
+              <th>PELAKSANA</th>
+              <th>TAHUN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Belajar Analisis Data dengan Python</td><td>Dicoding</td><td>19/08/2017</td></tr>
+            <tr><td>Belajar Dasar Data Science</td><td>Dicoding</td><td>24/09/2019</td></tr>
+            <tr><td>Cyber Security</td><td>Digitalent Kominfo</td><td>12/10/2019</td></tr>
+            <tr><td>Supply Chain Cybersecurity Risks</td><td>Digitalent Kominfo</td><td>17/06/2022</td></tr>
+            <tr><td>AWS Machine Learning Foundation</td><td>Digitalent Kominfo</td><td>29/07/2022</td></tr>
+            <tr><td>Belajar Pengembangan Machine Learning</td><td>Dicoding</td><td>21/08/2022</td></tr>
+            <tr><td>Robotic Process Automation</td><td>Digitalent Kominfo</td><td>11/10/2022</td></tr>
+            <tr><td>Alibaba Cloud Computing (ACA & ACP)</td><td>Digitalent Kominfo</td><td>12/10/2022</td></tr>
+            <tr><td>Data Engineer</td><td>Digitalent Kominfo</td><td>12/10/2022</td></tr>
+            <tr><td>Memulai Pemrograman Dengan Python</td><td>Dicoding</td><td>03/03/2023</td></tr>
+            <tr><td>Belajar Dasar Visualisasi Data</td><td>Dicoding</td><td>14/06/2023</td></tr>
+            <tr><td>Belajar Machine Learning Untuk Pemula</td><td>Dicoding</td><td>11/09/2023</td></tr>
+            <tr><td>Belajar Dasar AI</td><td>Dicoding</td><td>02/12/2023</td></tr>
+            <tr><td>Belajar Dasar Structured Query Language (SQL)</td><td>Dicoding</td><td>03/12/2023</td></tr>
+            <tr><td>Belajar Back-End Pemula dengan JavaScript</td><td>Dicoding</td><td>13/12/2023</td></tr>
+            <tr><td>Belajar Membuat Front-End Web untuk Pemula</td><td>Dicoding</td><td>30/12/2023</td></tr>
+            <tr><td>Belajar Prinsip Pemrograman SOLID</td><td>Dicoding</td><td>08/01/2024</td></tr>
+            <tr><td>Memulai Pemrograman Dengan C</td><td>Dicoding</td><td>08/01/2024</td></tr>
+            <tr><td>Memulai Pemrograman Dengan Java</td><td>Dicoding</td><td>11/01/2024</td></tr>
+            <tr><td>Memulai Pemrograman dengan Kotlin</td><td>Dicoding</td><td>23/01/2024</td></tr>
+            <tr><td>Belajar Dasar Pemrograman Web</td><td>Dicoding</td><td>12/02/2024</td></tr>
+            <tr><td>Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)</td><td>Dicoding</td><td>01/05/2024</td></tr>
+            <tr><td>Belajar Dasar Pemrograman JavaScript</td><td>Dicoding</td><td>18/09/2024</td></tr>
+            <tr><td>Belajar Membuat Aplikasi Android untuk Pemula</td><td>Dicoding</td><td>05/11/2024</td></tr>
+            <tr><td>Alibaba Cloud Model Studio and Qwen</td><td>Digitalent Kominfo</td><td>08/11/2024</td></tr>
+            <tr><td>Belajar Dasar Managemen Proyek</td><td>Dicoding</td><td>14/11/2024</td></tr>
+            <tr><td>Financial Literacy 101</td><td>Dicoding</td><td>14/11/2024</td></tr>
+            <tr><td>Junior Mobile Programming</td><td>BNSP</td><td>13/12/2024</td></tr>
+            <tr><td>Java Foundations</td><td>Oracle</td><td>28/04/2025</td></tr>
+            <tr><td>Java Programming</td><td>Oracle</td><td>14/06/2025</td></tr>
+            <tr><td>Java Dekstop</td><td>Plugin</td><td>15/06/2025</td></tr>
+            <tr><td>Mobile Programming</td><td>Plugin</td><td>07/06/2021</td></tr>
+            <tr><td>Web Programming</td><td>Plugin</td><td>On Progress</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tab: Seminar -->
+    <div class="tab-pane fade" id="seminar">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>NAMA SERTIFIKAT</th>
+              <th>PELAKSANA</th>
+              <th>TAHUN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Seberapa Penting Menjaga Data Pribadi dan Pelindungannya</td><td>Digitalent Kominfo</td><td>24/02/2025</td></tr>
+            <tr><td>Dasar-dasar Keamanan AI</td><td>Digitalent Kominfo</td><td>24/02/2025</td></tr>
+            <tr><td>Menerapkan Rekayasa Prompt dengan Azure OpenAI Service</td><td>Digitalent Kominfo</td><td>24/02/2025</td></tr>
+            <tr><td>Menskalakan AI di Organisasi Anda</td><td>Digitalent Kominfo</td><td>24/02/2025</td></tr>
+            <tr><td>Introduction To Cloud Computing</td><td>Digitalent Kominfo</td><td>24/02/2025</td></tr>
+            <tr><td>Memahami Aspek Pengembangan Produk AI</td><td>Digitalent Kominfo</td><td>24/02/2025</td></tr>
+            <tr><td>Bekraf Developer Day 2018 - Yogyakarta</td><td>Dicoding</td><td>03/11/2018</td></tr>
+            <tr><td>BEKRAF Developer Day 2019 - Purwokerto</td><td>Dicoding</td><td>23/06/2019</td></tr>
+            <tr><td>Baparekraf Developer Day 2020</td><td>Dicoding</td><td>18/07/2020</td></tr>
+            <tr><td>Baparekraf Developer Day 2021</td><td>Dicoding</td><td>03/04/2021</td></tr>
+            <tr><td>Baparekraf Game Prime 2021 - Class</td><td>Dicoding</td><td>06/08/2021</td></tr>
+            <tr><td>[Offline Event] Baparekraf Developer Day 2024</td><td>Dicoding</td><td>06/10/2024</td></tr>
+            <tr><td>Android Development for Beginners</td><td>Google Developer</td><td>2016</td></tr>
+            <tr><td>Developing Android Apps - Intermediate</td><td>Google Developer</td><td>01/10/2021</td></tr>
+            <tr><td>Android Basic : User Interface & User Input</td><td>Google Developer</td><td>01/10/2021</td></tr>
+            <tr><td>Inspiring Sociopreneur</td><td>Universitas Gajah Mada - FISIPOL</td><td>05/09/2016</td></tr>
+            <tr><td>Collaboration to Create Innovation</td><td>Telkomsel</td><td>02/06/2016</td></tr>
+            <tr><td>Lokakarya Kepemimpinan Mahasiswa PTS Kopertis VI Angkatan I</td><td>Kopertis Wilayah VI</td><td>10/10/2015</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tab: Graphics Designer -->
+    <div class="tab-pane fade" id="penghargaan">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>NAMA SERTIFIKAT</th>
+              <th>PELAKSANA</th>
+              <th>TAHUN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Juara 1 "Create A Creative Blog"</td><td>Universitas AKI</td><td>2016</td></tr>
+            <tr><td>Semifinalis "Sociopreneur Muda Indonesia (SOPREMA)"</td><td>Universitas Gajah Mada & KEMENPORA</td><td>2016</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

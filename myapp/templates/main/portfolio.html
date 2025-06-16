@@ -1,0 +1,195 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Profil - My Portfolio{% endblock %}
+
+{% block content %}
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Project Portfolio</h2>
+
+    <!-- Tabs kategori -->
+    <ul class="nav nav-pills justify-content-center mb-4" id="portfolio-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#developer">Software Developer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#design">Graphics Designer</a>
+      </li>
+    </ul>
+
+    <!-- Tab Contents -->
+    <div class="tab-content">
+
+      <!-- Software Developer -->
+      <div class="tab-pane fade show active" id="developer">
+        <div class="row">
+          <!-- Project Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <img src="{% static 'images/project/image.png' %}" class="card-img-top" alt="Project 1" width="800" height="200">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Blogspot Pribadi</h5><br>
+                <p class="card-text">Blog pribadi merupakan blog pribadi milik saya sendiri yang saya buat untuk berbagi informasi mengenai ilmu dan pengetahuan IT.</p>
+                <a href="https://rendis-arfendo.blogspot.com/" class="btn btn-primary btn-sm" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Lihat Proyek
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <video class="card-img-top" width="800" height="200" controls>
+                <source src="{% static 'videos/project/UnitKerja.mp4' %}" type="video/mp4">
+                Browser kamu tidak mendukung tag video.
+              </video>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Sistem GIS Unit Kerja RO Yogkarta</h5>
+                <p class="card-text">Sistem Informasi Geografis untuk Unit Kerja Regional Office Yogyakarta.</p>
+                <a href="{% static 'videos/project/UnitKerja.mp4' %}" class="btn btn-primary btn-sm" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Lihat Proyek
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <video class="card-img-top" width="800" height="200" controls>
+                <source src="{% static 'videos/project/AtmCrm.mp4' %}" type="video/mp4">
+                Browser kamu tidak mendukung tag video.
+              </video>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Sistem ATM CRM RO Yogyakarta</h5>
+                <p class="card-text">Sistem Customer Relationship Management untuk ATM di Regional Office Yogyakarta.</p>
+                <a href="{% static 'videos/project/AtmCrm.mp4' %}" class="btn btn-primary btn-sm" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Lihat Proyek
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 4 -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <img src="{% static 'images/project/wisatapurwakarta.png' %}" class="card-img-top" alt="Project 1" width="800" height="200">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Aplikasi Wisata Purwakarta</h5><br>
+                <p class="card-text">Aplikasi Wisata Purwakarta merupakan aplikasi yang meberikan informasi mengenai wisata yang ada di Purwakarta. Aplikasi Wisata Purwakarta ini dirancang menggunakan metode pengembangan sistem scrum, Rest API dari https://farizdotid.com/blog/dokumentasi-api-purwakarta/, dan menggunakan bahasa pemrograman Java.</p>
+                <a href="https://www.mediafire.com/file/p2cn3g6x0t1386c/Wisata_Purwakarta.apk/file" class="btn btn-primary btn-sm" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Lihat Proyek
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graphics Designer -->
+      <div class="tab-pane fade" id="design">
+        <div class="row">
+          <!-- Project Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <img src="{% static 'images/project/semarangexplore.png' %}" 
+                  class="card-img-top img-clickable" 
+                  alt="Project 1" width="800" height="200"
+                  data-toggle="modal" data-target="#imageModal1" 
+                  data-img-url="{% static 'images/project/semarangexplore.png' %}">
+              <div class="card-body">
+                <h5 class="card-title">Design Semarang Explore</h5>
+                <p class="card-text">Desain visual untuk mengenalkan potensi pariwisata kota Semarang.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 1 -->
+          <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body p-0">
+                  <img id="modalImage1" src="" class="img-fluid w-100" alt="Preview Gambar 1">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <img src="{% static 'images/project/smartlearning.png' %}" 
+                  class="card-img-top img-clickable" 
+                  alt="Project 2" width="800" height="200"
+                  data-toggle="modal" data-target="#imageModal2" 
+                  data-img-url="{% static 'images/project/smartlearning.png' %}">
+              <div class="card-body">
+                <h5 class="card-title">Design Smart Learning</h5>
+                <p class="card-text">Desain interaktif edukasi anak-anak menggunakan karakter Burung Kakak Tua.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 2 -->
+          <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body p-0">
+                  <img id="modalImage2" src="" class="img-fluid w-100" alt="Preview Gambar 2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <img src="{% static 'images/project/illustrator.png' %}" 
+                  class="card-img-top img-clickable" 
+                  alt="Project 3" width="800" height="200"
+                  data-toggle="modal" data-target="#imageModal3" 
+                  data-img-url="{% static 'images/project/illustrator.png' %}">
+              <div class="card-body">
+                <h5 class="card-title">Ilustrasi Edukasi Remaja</h5>
+                <p class="card-text">Desain ilustrasi dua remaja pria dan wanita membawa buku. Cocok untuk materi edukatif dan kampanye literasi.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 3 -->
+          <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body p-0">
+                  <img id="modalImage3" src="" class="img-fluid w-100" alt="Preview Gambar 3">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              // 3 modal images
+              const modalImages = {
+                imageModal1: document.getElementById("modalImage1"),
+                imageModal2: document.getElementById("modalImage2"),
+                imageModal3: document.getElementById("modalImage3")
+              };
+
+              const images = document.querySelectorAll(".img-clickable");
+              images.forEach(img => {
+                img.addEventListener("click", function () {
+                  const targetModalId = this.getAttribute("data-target").substring(1); // e.g. imageModal1
+                  const imageUrl = this.getAttribute("data-img-url");
+
+                  if (modalImages[targetModalId]) {
+                    modalImages[targetModalId].src = imageUrl;
+                  }
+                });
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

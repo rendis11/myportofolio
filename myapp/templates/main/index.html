@@ -1,0 +1,52 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Beranda - My Portfolio{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="content-wrapper d-flex align-items-center justify-content-center" style="min-height: 100vh; background: linear-gradient(to bottom right, #f4f6f9, #e0e0e0);">
+  <section class="content text-center">
+    <div class="container">
+      <img src="{% static 'images/project/Foto_Rendis (4x6).jpg' %}" class="rounded-circle mb-3" width="160" height="160" alt="Foto Profil">
+      <h1 class="display-4">Halo, saya <strong>Rendis Arfendo</strong></h1>
+      <p class="lead text-muted">Software Developer • Data Enthusiast • Graphics Designer</p>
+
+      <div class="mt-4">
+        <a href="{% url 'portfolio' %}" class="btn btn-primary btn-lg m-2 shadow">
+          <i class="fas fa-briefcase"></i> Lihat Proyek
+        </a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-secondary btn-lg m-2 shadow">
+          <i class="fas fa-envelope"></i> Kontak Saya
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Highlight Section -->
+<section class="content py-5 bg-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <i class="fas fa-code fa-3x text-primary mb-3"></i>
+        <h5>Software Developer</h5>
+        <p>Mengembangkan aplikasi berbasis mobile & web.<br>
+        Skill Bahasa pemrograman : HTML, CSS, Bootstrap, Django, PHP, Python, Java, Javascript, Codeigniter</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-paint-brush fa-3x text-success mb-3"></i>
+        <h5>Data Enthusiast</h5>
+        <p>Ketertarikan untuk mempelajari, mengolah, dan menganalisis data untuk mendapatkan wawasan dan informasi berharga dari data tersebut.<br>
+        Tools yang digunakan : PowerBI, Tableau, Ms Excel </p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-server fa-3x text-danger mb-3"></i>
+        <h5>Graphics Designer</h5>
+        <p>Menciptakan dan mengkomunikasikan pesan melalui elemen visual seperti gambar, tipografi, warna, dan bentuk.<br>
+        Tools yang digunakan : Adobe Illustrator & CorelDraw</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

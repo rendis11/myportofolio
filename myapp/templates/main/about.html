@@ -1,0 +1,491 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Profil - My Portfolio{% endblock %}
+
+{% block content %}
+<section class="content py-5">
+  <div class="container">
+    <!-- Heading -->
+    <h2 class="text-center mb-4 wow fadeInUp">Tentang Saya</h2>
+    <div class="row align-items-center mb-5">
+      <!-- Foto Profil -->
+      <div class="col-md-4 text-center">
+        <img src="{% static 'images/project/Foto_Rendis (4x6).jpg' %}" class="rounded-circle mb-3" width="160" height="160" alt="Foto Profil">
+        <h4 class="mb-1">Rendis Arfendo</h4>
+        <p class="text-muted">Software Developer | Data Enthusiast | Graphics Designer</p>
+        <a href="{% url 'contact' %}" class="btn btn-sm btn-outline-primary mt-2">
+          <i class="fas fa-envelope"></i> Hubungi Saya
+        </a>
+      </div>
+      <!-- Deskripsi Singkat -->
+      <div class="col-md-8">
+        <p class="lead">Saya adalah seorang Software Developer dengan minat besar dalam data dan desain. Dengan latar belakang di bidang pengembangan perangkat lunak, saya memiliki keahlian dalam membangun sistem yang skalabel dan berbasis data, sekaligus mampu menciptakan antarmuka yang menarik secara visual. Kombinasi antara logika pemrograman, pemrosesan data, dan estetika desain membuat saya mampu menyelesaikan proyek dari sisi teknis maupun kreatif.</p>
+        <p>Saya percaya bahwa kombinasi antara software & data adalah kunci dari aplikasi yang sukses.</p>
+      </div>
+    </div>
+
+    <!-- Riwayat Pendidikan -->
+    <h4 class="text-center mt-5 mb-4">Riwayat Pendidikan</h4>
+    <div class="timeline">
+      <!-- Sarjana -->
+      <div>
+        <i class="fas fa-graduation-cap bg-primary"></i>
+        <div class="timeline-item">
+          <span class="time"><i class="far fa-calendar-alt"></i> 2015 - 2019</span>
+          <h5 class="timeline-header">S1 Teknik Informatika (S.Kom.)</h5>
+          <div class="timeline-body">
+            Universitas AKI<br>
+            IPK : 3.65 / 4.00<br>
+          </div>
+        </div>
+      </div>
+      <!-- SMK -->
+      <div>
+        <i class="fas fa-graduation-cap bg-primary"></i>
+        <div class="timeline-item">
+          <span class="time"><i class="far fa-calendar-alt"></i> 2012 - 2015</span>
+          <h5 class="timeline-header">Kimia Industri</h5>
+          <div class="timeline-body">
+            SMK Yayasan Pharmasi<br>
+            IPK : 7,95 / 100<br>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Keahlian -->
+    <h4 class="text-center mb-4">Keahlian</h4>
+    <div class="row text-center">
+      <!-- Software Developer -->
+      <div class="col-md-4 mb-4">
+        <div class="info-box bg-white shadow-sm p-3">
+          <div class="info-box-content">
+            <!-- Judul Kategori -->
+            <h6 class="text-uppercase font-weight-bold mb-3 text-black">
+              <i class="fas fa-code mr-2"></i> Software Developer
+            </h6>
+            <!-- Java -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">Java</span>
+                </div>
+                <span><b>75</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 75%"></div>
+              </div>
+            </div>
+            <!-- Python -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">Python</span>
+                </div>
+                <span><b>70</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 70%"></div>
+              </div>
+            </div>
+            <!-- Django -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">Django</span>
+                </div>
+                <span><b>70</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 70%"></div>
+              </div>
+            </div>
+            <!-- CSS -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">CSS</span>
+                </div>
+                <span><b>70</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 70%"></div>
+              </div>
+            </div>
+            <!-- Bootstrap -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">Bootstrap</span>
+                </div>
+                <span><b>70</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 70%"></div>
+              </div>
+            </div>
+            <!-- PHP -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">PHP</span>
+                </div>
+                <span><b>65</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 65%"></div>
+              </div>
+            </div>
+            <!-- Javascript -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">Javascript</span>
+                </div>
+                <span><b>65</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 65%"></div>
+              </div>
+            </div>
+            <!-- MySQL -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">MySQL</span>
+                </div>
+                <span><b>65</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 65%"></div>
+              </div>
+            </div>
+            <!-- SQLite -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">SQLite</span>
+                </div>
+                <span><b>65</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 65%"></div>
+              </div>
+            </div>
+            <!-- PostgreSQL -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">PostgreSQL</span>
+                </div>
+                <span><b>65</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 65%"></div>
+              </div>
+            </div>
+            <!-- Codieigneter -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">Codeigniter</span>
+                </div>
+                <span><b>50</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 50%"></div>
+              </div>
+            </div>
+            <!-- Flutter -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">Flutter</span>
+                </div>
+                <span><b>40</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 50%"></div>
+              </div>
+            </div>
+            <!-- Kotlin -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">Kotlin</span>
+                </div>
+                <span><b>40</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 50%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Data Enthusiast -->
+      <div class="col-md-4 mb-4">
+        <div class="info-box bg-white shadow-sm p-3">
+          <div class="info-box-content">
+            <!-- Judul Kategori -->
+            <h6 class="text-uppercase font-weight-bold mb-3 text-black">
+              <i class="fas fa-code mr-2"></i> Data Enthusiast
+            </h6>
+            <!-- Java -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">Ms Excel</span>
+                </div>
+                <span><b>75</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 75%"></div>
+              </div>
+            </div>
+            <!-- Python -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">PowerBI</span>
+                </div>
+                <span><b>65</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 65%"></div>
+              </div>
+            </div>
+            <!-- Django -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">Tableau</span>
+                </div>
+                <span><b>65</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Graphics Designer -->
+      <div class="col-md-4 mb-4">
+        <div class="info-box bg-white shadow-sm p-3">
+          <div class="info-box-content">
+            <!-- Judul Kategori -->
+            <h6 class="text-uppercase font-weight-bold mb-3 text-black">
+              <i class="fas fa-code mr-2"></i> Graphics Designer
+            </h6>
+            <!-- Adobe Illustrator -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">Adobe Illustrator</span>
+                </div>
+                <span><b>70</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 70%"></div>
+              </div>
+            </div>
+            <!-- Python -->
+            <div class="progress-group">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-laptop-code text-dark mr-2"></i>
+                  <span class="font-weight-bold">CorelDraw</span>
+                </div>
+                <span><b>70</b>/100</span>
+              </div>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-primary" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Riwayat Pekerjaan -->
+    <h4 class="text-center mt-5 mb-4">Riwayat Pekerjaan</h4>
+    <div class="timeline">
+      <!-- PKSS -->
+      <div class="time-label">
+        <span class="bg-success">September 2023 - Sekarang</span>
+      </div>
+      <div>
+        <i class="fas fa-graduation-cap bg-primary"></i>
+        <div class="timeline-item">
+          <span class="time"><i class="far fa-calendar-alt"></i>Yogyakarta</span>
+          <h5 class="timeline-header">PT. PRIMA KARYA SARANA SEJAHTERA</h5>
+          <div class="timeline-body">
+            Teknisi IT Kanwil , Pegawai Kontrak<br>
+            Pekerja Outsourching yang penempatan di Bank BRI Kanwil Yogyakarta pada bagian ITE (Information Technology & E-channel)
+          </div>
+          <div class="timeline-body">
+            <ul class="mb-0">
+              <li>Membuat software sesuai permintaan department lain, aplikasi yang sudah saya buat seperti aplikasi atm crm, aplikasi driver management, aplikasi pipeline RM Briguna.</li>
+              <li>Melakukan integrasi antara backend dan frontend dalam pengembangan aplikasi agar berjalan secara sinergis.</li>
+              <li>Memberikan laporan secara teratur mengenai perkembangan proyek, tantangan yang dihadapi dan solusi yang telah diambil.</li>
+              <li>Berkolaborasi dengan tim desain untuk memastikan tampilan aplikasi sesuai dengan keinginan klien dan user friendly agar menghasilkan produk akhir yang berkualitas.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <i class="fas fa-graduation-cap bg-primary"></i>
+        <div class="timeline-item">
+          <div class="timeline-body">
+            Data Analyst , Pegawai Kontrak<br>
+            Pekerja Outsourching yang penempatan di Bank BRI Kanwil Yogyakarta pada bagian ITE (Salary Based Loan)
+          </div>
+          <div class="timeline-body">
+            <ul class="mb-0">
+              <li>Melakukan Analisa data pipeline RM Briguna, data leads, dan pencapaian target RM Briguna.</li>
+              <li>Memberikan laporan secara teratur mengenai perkembangan pencapaian target RM Briguna.</li>
+              <li>Berkolaborasi dengan tim untuk mencapai target bersama.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- FREELANCER -->
+      <div class="time-label">
+        <span class="bg-success">Januari 2017 - Sekarang</span>
+      </div>
+      <div>
+        <i class="fas fa-graduation-cap bg-primary"></i>
+        <div class="timeline-item">
+          <span class="time"><i class="far fa-calendar-alt"></i>Semarang</span>
+          <h5 class="timeline-header">FREELANCER</h5>
+          <div class="timeline-body">
+            Programmer & Design Grafis , Pekerja Harian Lepas
+          </div>
+          <div class="timeline-body">
+            <ul class="mb-0">
+              <li>Aplikasi Pembelajaran PPKn Berbasis Android.</li>
+              <li>Sistem Recruitment Berbasis Web.</li>
+              <li>Sistem Company Profile Berbasis Web.</li>
+              <li>Sistem Inventory Perusahaan Berbasis Web.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- BPR AC -->
+      <div class="time-label">
+        <span class="bg-primary">Januari 2023 - Mei 2023</span>
+      </div>
+      <div>
+        <i class="fas fa-graduation-cap bg-primary"></i>
+        <div class="timeline-item">
+          <span class="time"><i class="far fa-calendar-alt"></i>Kendal</span>
+          <h5 class="timeline-header">BPR ARTHAMA CERAH</h5>
+          <div class="timeline-body">
+            IT Support , Pegawai Kontrak
+          </div>
+          <div class="timeline-body">
+            <ul class="mb-0">
+              <li>Melakukan instalasi sistem operasi, mengonfigurasi hardware, serta memastikan bahwa semua driver dan software yang diperlukan sudah terpasang dengan benar.</li>
+              <li>Mengatur dan memantau perangkat jaringan seperti switch, router, dan perangkat lain yang membentuk infrastruktur IT perusahaan.</li>
+              <li>Mengatasi masalah perangkat lunak, memperbarui aplikasi, dan memastikan semua lisensi perangkat lunak tetap valid dan aman untuk dijalankan.</li>
+              <li>Melakukan proses backup secara berkala untuk memastikan data penting terlindungi dan siap dipulihkan jika terjadi kegagalan sistem.</li>
+              <li>Mengawasi potensi ancaman keamanan dan mengambil langkah-langkah pencegahan untuk melindungi sistem dari serangan dan malware.</li>
+              <li>Memberikan bantuan cepat untuk memperbaiki masalah dan mengurangi downtime yang tidak diinginkan.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- SICEPAT -->
+      <div class="time-label">
+        <span class="bg-primary">Agustus 2021 - Juni 2022</span>
+      </div>
+      <div>
+        <i class="fas fa-graduation-cap bg-primary"></i>
+        <div class="timeline-item">
+          <span class="time"><i class="far fa-calendar-alt"></i>Semarang</span>
+          <h5 class="timeline-header">PT. SICEPAT EKSPRES INDONESIA</h5>
+          <div class="timeline-body">
+            Administrasi & Customer Service , Pegawai Kontrak
+          </div>
+          <div class="timeline-body">
+            <ul class="mb-0">
+              <li>Mencatat dan mengelola data pengiriman seperti detail barang yang akan dikirim (jenis barang, berat, ukuran), informasi penerima (nama, alamat, nomor telepon), tujuan pengiriman dan metode pengiriman yang digunakan.</li>
+              <li>Memastikan dokumen pengiriman seperti surat jalan, faktur, nota pengiriman, dan bukti penerimaan barang telah diproses dan disiapkan dengan baik sebelum pengiriman dilakukan.</li>
+              <li>Mengatur dan berkoordinasi dengan tim kurir atau pengemudi untuk memastikan bahwa pengiriman barang berjalan sesuai jadwal meliputi memberikan instruksi terkait rute perjalanan, menginformasikan perintah pengiriman yang tepat kepada kurir, memastikan kurir mendapatkan informasi lengkap tentang paket harus diantar.</li>
+              <li>Melacak dan memantau status pengiriman.</li>
+              <li>Menangani keluhan dan masalah pengiriman meliputi Ketika terjadi keterlambatan, barang rusak, atau masalah dalam pengiriman, admin ekspedisi bertindak sebagai perantara antara pelanggan dan pihak pengiriman untuk menyelesaikan masalah tersebut.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Organisasi -->
+    <h4 class="text-center mt-5 mb-4">Organisasi</h4>
+    <div class="timeline">
+      <!-- IT Club -->
+      <div>
+        <i class="fas fa-graduation-cap bg-primary"></i>
+        <div class="timeline-item">
+          <span class="time"><i class="far fa-calendar-alt"></i> 2018 - 2019</span>
+          <h5 class="timeline-header">IT CLUB</h5>
+          <span class="time"><i class="far fa-calendar-alt"></i> Semarang</span>
+          <div class="timeline-body">
+            Ketua UKM<br>
+            <ul class="mb-0">
+              <li>Memimpin rapat pengurus.</li>
+              <li>Bertanggung jawab atas segala kegiatan organisasi.</li>
+              <li>Menjalankan program UKM.</li>
+              <li>Membuat rencana program dan kegiatan.</li>
+              <li>Mengevaluasi program dan kegiatan.</li>
+              <li>Memegang kebijakan umum pengurus.</li>
+              <li>Bertanggung jawab keluar maupun kedalam organisasi.</li>
+              <li>Melaksanakan reshuffle kepengurusan apabila diperlukan.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- SANDEC -->
+      <div>
+        <i class="fas fa-graduation-cap bg-primary"></i>
+        <div class="timeline-item">
+          <span class="time"><i class="far fa-calendar-alt"></i> 2017 - Sekarang</span>
+          <h5 class="timeline-header">SANDEC</h5>
+          <span class="time"><i class="far fa-calendar-alt"></i> Semarang</span>
+          <div class="timeline-body">
+            Anggota<br>
+            <ul class="mb-0">
+              <li>Berkomunikasi dengan baik.</li>
+              <li>Memberikan kontribusi pada tim.</li>
+              <li>Memberikan masukan terhadap tantangan tim.</li>
+              <li>Menghadiri acara tim.</li>
+              <li>Menjadi bagian dari budaya tim.</li>
+              <li>Bertanggung jawab pada pekerjaan yang dipercayakan.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
